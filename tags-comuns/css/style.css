@@ -1,0 +1,10 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: .5ms;
+  border-bottom: 4px solid #000;
+  font-size: 1.25rem;
+}
