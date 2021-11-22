@@ -2,13 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
-  align-content: center;
-  height: 100vh;
+}
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 }
 
 body {
   margin: 0px;
+  
 }
 
 h2 {
