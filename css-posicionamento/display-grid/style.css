@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+.comprar {
+  background: #a8f;
+  padding: 10px 20px;
+  color: #103;
+  text-decoration: none;
+  border-radius: 4px;
+  /* display: inline-block; */
+}
+
+.item {
+  display: grid;
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+}
