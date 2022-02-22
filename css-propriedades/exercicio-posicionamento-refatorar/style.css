@@ -4,9 +4,19 @@ body {
   background: #f7f7f7;
   display: grid;
   justify-items: center;
-  gap: 60px;
-  margin-top: 60px;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
 }
+
+header {
+  display: grid;
+  gap: 3.75rem;
+}
+
+.logo {
+  justify-self: center;
+}
+
 
 img {
   max-width: 100%;
@@ -30,6 +40,7 @@ p {
 }
 
 .menu {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
