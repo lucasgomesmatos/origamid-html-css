@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  margin-bottom: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.menu a {
+  background: #fff;
+  padding: 0.9rem 1.875rem;
+  border-radius: 0.25rem;
+  color: #000;
+  text-transform: uppercase;
+  border: 0.2rem solid transparent;
+}
+
+.menu a:hover {
+  border-color: #e21;
+  transition: 0.3s ease;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+
+.introducao {
+  background: #fff;
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao h1 {
+  font-size: 2rem;
+}
+
+.introducao::before {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.botao {
+  background: #e21;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.botao:hover {
+  background: #900;
+}
+
+.subtitulo-container {
+  grid-column: 1;
+  padding: 2.5rem;
+  align-self: center;
+  background-image: url("./img/onda.svg");
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  position: relative;
+}
+
+.vantagens {
+  background: #fff;
+  padding: 2.5rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  border-left: 3px solid transparent;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.vantagens-item:hover {
+  border-color: #e21;
+  transition: .3s ease;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}
